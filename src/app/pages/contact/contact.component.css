@@ -1,0 +1,322 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Hero Section */
+.contact-hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-card h2 {
+    font-size: 24px;
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-card ul {
+    list-style: none;
+}
+
+.contact-card ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+.contact-section {
+    padding: 50px 0;
+    background: url('https://maps.googleapis.com/maps/api/staticmap?center=Shivaji%20Nagar,Secunderabad,Hyderabad,Telangana,500003&zoom=15&size=1200x600&key=YOUR_API_KEY') no-repeat center center/cover;
+  }
+  
+  .contact-container {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-left {
+    flex: 1 1 40%;
+    padding: 20px;
+  }
+  
+  .contact-left h2 {
+    color: #0a0a23;
+    margin-bottom: 10px;
+  }
+  
+  .contact-left h3 {
+    color: #0a0a23;
+    margin-bottom: 20px;
+  }
+  
+  .contact-left p {
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info a {
+    color: #0a0a23;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .contact-right {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  .contact-right form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-right button {
+    padding: 12px;
+    background: #0a0a23;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-right button:hover {
+    background: #333;
+  }
+  
+
+
+
+/* contact css code */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-section {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Two-tone gradient */
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-left ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .usa-guide-box, .trip-planner-box {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62); /* Color 1 */
+    border-radius: 8px;
+  }
+  
+  .footer-images p {
+    margin-top: 5px;
+    max-width: 150px;
+  }
+  
+  .app-logos {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .appstore-box, .googleplay-box {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  .appstore-box {
+    background: linear-gradient(90deg, #43cea2, #185a9d); /* Color 2 */
+  }
+  
+  .googleplay-box {
+    background: linear-gradient(90deg, #f7971e, #ffd200); /* Color 3 */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  .footer-logo h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+  
+  .social-icons span {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .cta-button button {
+    background: #f16722;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  
+  .footer-contact-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #032747;
+    padding: 15px 0;
+    color: #fff;
+  }
+  
+  .footer-contact-row .contact-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact-row .contact-item span {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .footer-contact-row .contact-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .footer-left ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .footer-left ul li a:hover {
+    text-decoration: underline;
+    color: #00aced;
+  }
+  

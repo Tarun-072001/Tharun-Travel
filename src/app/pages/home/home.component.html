@@ -1,0 +1,250 @@
+<div class="main">
+  <div class="slideshow">
+    <!-- Slide 1: Car Travel -->
+    <div class="slide slide1" [class.active]="currentSlide === 0">
+      <div class="overlay">
+        <h1>Embark on a Road Adventure</h1>
+        <p>"The journey is best measured in friends, rather than miles."</p>
+        <button class="book-btn" (click)="openPopup()">Book Your Car Trip</button>
+      </div>
+    </div>
+    <!-- Slide 2: Bus Journey -->
+    <div class="slide slide2" [class.active]="currentSlide === 1">
+      <div class="overlay">
+        <h1>Discover Together by Bus</h1>
+        <p>"Life is a journey, enjoy the ride."</p>
+        <button class="book-btn" (click)="openPopup()">Book Your Bus Tour</button>
+      </div>
+    </div>
+    <!-- Slide 3: Bike Expedition -->
+    <div class="slide slide3" [class.active]="currentSlide === 2">
+      <div class="overlay">
+        <h1>Experience Freedom on Two Wheels</h1>
+        <p>"Ride as much or as little, as long or as short as you feel. But ride."</p>
+        <button class="book-btn" (click)="openPopup()">Book Your Bike Adventure</button>
+      </div>
+    </div>
+    <!-- Slide 4: Flight Voyage -->
+    <div class="slide slide4" [class.active]="currentSlide === 3">
+      <div class="overlay">
+        <h1>Soar Above the Clouds</h1>
+        <p>"To most people, the sky is the limit. To those who love aviation, the sky is home."</p>
+        <button class="book-btn" (click)="openPopup()">Book Your Flight</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Left Section -->
+  <div class="left-content" style="text-align: justify;">
+    <h2>About Tour and Travels</h2>
+    <p>
+      Tour and Travels is a service-based industry that helps people travel from one place to another for different purposes like leisure, business, education, medical needs, or adventure. It includes all the activities and services involved in planning, booking, and managing travel experiences.
+    </p>
+    <p>
+      It involves:
+    </p>
+    <ul>
+      <li><strong>Tours:</strong> Organized trips for relaxation, exploration, or learning.</li>
+      <li><strong>Travel:</strong> The actual movement from one destination to another by various means (air, road, rail, water).</li>
+    </ul>
+    <p>
+      The Tour and Travel industry includes travel agencies, tour operators, transportation (flights, buses, trains), hotels, and other hospitality services that make travel easy, safe, and enjoyable.
+    </p>
+    <p>
+      In short, it is all about helping people go to new places and making their journey smooth and memorable.
+    </p>
+
+    <h4>1. Introduction to Tour and Travels</h4>
+    <p>
+      The Tour and Travel industry is one of the largest and fastest-growing sectors in the world. It involves the services provided to people who are traveling from one place to another, whether for leisure, business, adventure, or other purposes. The industry focuses on making travel experiences convenient, enjoyable, and memorable.
+    </p>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right-image">
+    <!-- Image is set via CSS -->
+  </div>
+</div>
+
+
+<section class="trending-section">
+  <h1>Now Trending</h1>
+  <div class="trending-container">
+      <!-- Box 1 -->
+      <div class="trend-box">
+          <label for="popup1">
+              <div class="trend-image trend1">
+                  <div class="overlay-text">Hidden Towns & Adventures</div>
+              </div>
+          </label>
+          <p>Explore Hidden Towns & Adventures Across Europe in "Wonders of Small Cities"</p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="trend-box">
+          <label for="popup2">
+              <div class="trend-image trend2">
+                  <div class="overlay-text">Luxury Culture Tours</div>
+              </div>
+          </label>
+          <p>Luxury Culture Tours in Paris & Versailles: Discover the Best of French Royalty</p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="trend-box">
+          <label for="popup3">
+              <div class="trend-image trend3">
+                  <div class="overlay-text">Island Retreats</div>
+              </div>
+          </label>
+          <p>Relax on hidden tropical islands with private beaches & luxury stays</p>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="trend-box">
+          <label for="popup4">
+              <div class="trend-image trend4">
+                  <div class="overlay-text">Safari Adventures</div>
+              </div>
+          </label>
+          <p>Go on thrilling Safari adventures and witness wildlife up-close in Africa</p>
+      </div>
+  </div>
+</section>
+
+
+<section class="trips-section">
+  <h2 class="trips-title">Trips <span>🛫</span></h2>
+  <div class="trips-container">
+    <div class="trip-card card1">
+      <!-- <p class="trip-duration">Trip - 3 days</p> -->
+      <h3><a style="    color: aqua;" [routerLink]="['/about', 1]">A Beach-Hopping Road Trip through Southeast Texas</a></h3>
+    </div>
+    <div class="trip-card card2">
+      <!-- <p class="trip-duration">Trip - 4 days</p> -->
+      <h3><a style="    color: aqua;" [routerLink]="['/about', 2]">Coastal Flavors and Farm-Fresh Delights: A Tasting Tour of Maine</a></h3>
+    </div>
+    <div class="trip-card card3">
+      <!-- <p class="trip-duration">Trip - 1-2 weeks</p> -->
+      <h3><a style="    color: aqua;" [routerLink]="['/about', 3]">Journey through Georgia on a Southern Road Trip</a></h3>
+    </div>
+    <div class="trip-card video-card card4">
+      <div class="play-button">▶</div>
+      <!-- <p class="trip-duration">Trip - 4 days</p> -->
+      <h3><a style="    color: aqua;" [routerLink]="['/about', 4]">Michigan Road Trip: Nature, History and Culture in the Great Lakes State</a></h3>
+    </div>
+  </div>
+  <!-- <div class="view-all-btn">
+    <button>View all trips</button>
+  </div> -->
+</section>
+
+
+<section class="fact-section">
+  <div class="fact-container">
+      <div class="fact-image"></div>
+      <div class="fact-content">
+          <h5>Fun Fact <span></span></h5>
+          <p>The striking dunes of Coral Pink Sand Dunes State Park in Utah are estimated to be between 10,000 and 15,000 years old.</p>
+      </div>
+      <div class="fact-navigation">
+          <span class="arrow">&#10095;</span>
+          <span class="arrow down">&#10095;</span>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="footer-section">
+  <div class="footer-container">
+
+    <!-- Footer Left -->
+    <div class="footer-left">
+      <ul>
+        <li>Brand USA</li>
+        <li>Media Inquiries</li>
+        <li>Contact Us</li>
+        <li>Terms of Use</li>
+        <li>USA Travel Information</li>
+      </ul>
+      <ul>
+        <li>FAQs</li>
+        <li>Privacy Policy</li>
+        <li>Travel Trade</li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.google.com/maps?q=Secunderabad,Hyderabad" target="_blank">
+            <span>📍</span> Secunderabad, Hyderabad
+          </a>
+        </li>
+        <li>
+          <a href="tel:+919346892181">
+            <span>📞</span> +91 9346892181
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@tharun.com">
+            <span>✉️</span> info&#64;tharun.com
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer Right -->
+    <div class="footer-right">
+      <div class="footer-images">
+        <div class="usa-guide">
+          <p>Find vacation ideas in the latest Visit The USA Guide...</p>
+        </div>
+        <div class="trip-planner">
+          <p>Create a custom itinerary with the Trip Planner...!</p>
+        </div>
+      </div>
+      <div class="app-logos">
+        <div class="appstore-box"></div>
+        <div class="googleplay-box"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <h2>GousaTV</h2>
+      <p>Because every place has a story.</p>
+    </div>
+    <div class="social-icons">
+      <span>🎵</span>
+      <span>👍</span>
+      <span>▶</span>
+      <span>📸</span>
+    </div>
+    <div class="cta-button">
+      <button>📍 PLAN YOUR TRIP</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Popup Registration Modal -->
+<div class="popup" [class.show]="showPopup">
+  <div class="popup-content">
+    <h2>Register for Your Journey</h2>
+    <form (ngSubmit)="registerUser()">
+      <input type="text" [(ngModel)]="user.fullName" name="fullName" placeholder="Full Name" required>
+      <input type="email" [(ngModel)]="user.email" name="email" placeholder="Email" required>
+      <input type="tel" [(ngModel)]="user.phone" name="phone" placeholder="Phone Number" required>
+      <button type="submit">Submit</button>
+      <button type="button" class="close-btn" (click)="closePopup()">Close</button>
+    </form>
+  </div>
+</div>
+
